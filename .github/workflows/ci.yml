@@ -65,3 +65,6 @@ jobs:
 
       - name: Run tests
         run: uv run pytest -v --tb=short -m "not gpu"
+
+      - name: Smoke Test
+        run: uv run corridorkey --help
